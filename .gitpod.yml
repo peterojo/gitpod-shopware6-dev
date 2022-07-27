@@ -1,0 +1,10 @@
+tasks:
+  - init: |
+      docker-compose pull
+  - command: |
+      export GP_URL=`gp url | sed 's~https://~~'`
+      docker-compose up
+
+vscode:
+  extensions:
+    - ms-azuretools.vscode-docker
