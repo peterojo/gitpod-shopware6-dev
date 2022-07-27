@@ -1,8 +1,5 @@
 tasks:
-  - init: |
-      docker-compose pull
   - command: |
-      export GP_URL=`gp url`
       docker-compose up
 
 vscode:
